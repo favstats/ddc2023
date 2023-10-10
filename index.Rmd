@@ -2,7 +2,7 @@
 title: "Who Doesn't Target You?"
 subtitle: "Mapping the Worldwide Usage of Online Political Microtargeting"
 author: "<b>Fabio Votta</b>, Simon Kruschinski <i>(University of Mainz)</i>, Mads Hove, Tom Dobber, Natali Helberger, and Claes de Vreese <i>(University of Amsterdam)</i>"
-date: '&nbsp;`r icons::icon_style(icons::fontawesome("link"),fill="black")`&nbsp;favstats.github.io/nefca2023 (Slides) <br> &nbsp;`r icons::icon_style(icons::fontawesome("twitter"),fill="blue")`&nbsp;favstats <br> &nbsp;`r icons::icon_style(icons::fontawesome("mastodon"),fill="#615ff7")`&nbsp;favstats@fosstodon.org <br> &nbsp;`r icons::icon_style(icons::fontawesome("square", style = "solid"),fill="#0085ff")`&nbsp;favstats.bsky.social &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 13th October 2023 - DDC Manchester Workshop'
+date: '&nbsp;`r icons::icon_style(icons::fontawesome("link"),fill="black")`&nbsp;favstats.github.io/ddc2023 (Slides) <br> &nbsp;`r icons::icon_style(icons::fontawesome("twitter"),fill="blue")`&nbsp;favstats <br> &nbsp;`r icons::icon_style(icons::fontawesome("mastodon"),fill="#615ff7")`&nbsp;favstats@fosstodon.org <br> &nbsp;`r icons::icon_style(icons::fontawesome("square", style = "solid"),fill="#0085ff")`&nbsp;favstats.bsky.social &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 13th October 2023 - DDC Manchester Workshop'
 output:
   xaringan::moon_reader:
     css: [ascor.css, default]
@@ -37,7 +37,11 @@ library(tidyverse)
 
 ```
 
+class: middle, center, white
 
+![](https://64.media.tumblr.com/fc5db9aeb892e90590a42940519279ee/tumblr_oqfhqlwFOb1rpu8e5o1_1280.png)
+
+---
 
 ### Studying **usage** of *online political microtargeting* 
 
