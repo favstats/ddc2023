@@ -40,7 +40,7 @@ library(tidyverse)
 
 class: white, middle, center
 
-### Is Political Microtargeting Destroying Democracy?
+### .font60[Is Political Microtargeting Destroying Democracy? Or is it a Myth?]
  
  
 <img src="img/cambridge_analytica.png" width="80%">
@@ -68,7 +68,7 @@ class: white, middle, center
 
 #### 1. Inadequate or no data (on actual targeting strategies)
 
-Where do we get the data from?
+How can we know how microtargeting is used in practice?
 
 <br>
 
@@ -81,9 +81,9 @@ Which countries do we study?
 
 class: middle, center
 
-### 1. Inadequate or hard-to-access data
+### 1. Inadequate data
 
-#### Where do we get the data from?
+#### How can we know how microtargeting is used in practice?
 
 
 ---
@@ -233,7 +233,7 @@ class: white
 .pull-left[
 
 
-+ Interviews *(López Ortega, 2022; Silva et al., 2020)*
++ Interviews *(e.g. Kefford et al. 2023)*
 
   + campaign staff or platform employees
   
@@ -258,7 +258,7 @@ class: white
 .pull-left[
 
 
-+ Interviews *(López Ortega, 2022; Silva et al., 2020)*
++ Interviews *(e.g. Kefford et al. 2023)*
 
   + campaign staff or platform employees
   
@@ -266,7 +266,7 @@ class: white
   
   *however*
   
-  + campaigns might not be willing to share information on how they utilize voter data for targeted ads
+  + campaigns might not be willing to share information
   
   + who gets to have access to political parties?
   
@@ -302,7 +302,7 @@ class: middle, center
 
 class: white
 
-### Political microtargeting - a WEIRD issue? .font50[(Aagaard & Marthedal 2023 + own research)]
+### Political microtargeting - a WEIRD issue? .font30[(Aagaard & Marthedal 2023 + own research)]
 
 ```{r, echo=F, fig.width=6, fig.height=4, dpi=900, eval = F}
 the_dat <- readr::read_csv2("data/world.csv") %>% 
@@ -718,10 +718,7 @@ class: middle, center
 
 ## RQ2: Country Differences
 
-
-
 ---
-
 
 class: white
 
@@ -730,9 +727,220 @@ class: white
 
 + **Political factors**
 
-+ **Regulatory factors**
++ Regulatory factors
 
-+ **Resource and Reach factors**
++ Resource factors
+
+---
+
+class: white
+
+#### Political factors
+  
+> Targeting strategies are common regardless of level of democracy
+
+
+![](img/democ1.png)
+  
+---
+
+
+class: white
+
+#### Political factors
+
+  > Targeting strategies are common regardless of level of democracy
+  
+  
+![](img/democ2.png)
+  
+
+---
+
+class: middle, center
+
+# Results
+
+## RQ3: Party Differences
+
+---
+
+class: white
+
+
+#### RQ3: Party Differences
+
+> Adoption of microtargeting does not differ between political ideology
+
+![](img/ideo1.png)
+---
+
+class: white
+
+
+#### RQ3: Party Differences
+
+> Adoption of microtargeting does not differ between political ideology
+
+![](img/ideo2.png)
+
+---
+
+class: white
+
+#### How do they use microtargeting? - Right-leaning parties
+
+
+![](img/targettype_right.png)
+
+---
+
+class: white
+
+#### How do they use microtargeting? - Right-leaning parties
+
+
+![](img/detailed_right.png)
+
+
+---
+
+
+class: white
+
+#### How do they use microtargeting? - Left-leaning parties
+
+
+![](img/targettype_left.png)
+
+---
+
+class: white
+
+#### How do they use microtargeting? - Left-leaning parties
+
+
+<img src="img/detailed_left.png" width="83%">
+
+
+---
+
+class: white
+
+#### "Interest in politics" most commonly targeted
+
+<img src="img/topinterests.png" width="78%">
+
+
+---
+
+
+#### RQ3: Party Differences
+
+
++ **Which parties use microtargeting?**
+
+  + No ideological difference between microtargeting focus
+
+  + Older parties seem more likely use microtargeting strategies
+
++ **How do they use microtargeting?**
+
+  + Parties seem to use microtargeting primarily to reach core audiences
+
+  + Parties seem to ue microtargeting primarily to reach politically involved audiences
+
+
+
+
+---
+
+
+## Conclusions
+
++ Online political **targeting** is **common around the world**
+
+**However:**
+
+  + Most commonly using a single targeting criterion
+    
+  + Most commonly using location and socio-demographics (e.g. age)
+
++ political microtargeting is used **by both left and right**
+
+--
+
+**So is political microtargeting overhyped?**
+
+--
+
++ Its usage in less-democratic countries should make us pause 
+
+--
+
++ parties **target** their respective **core audiences**
+
+  + i.e. concerns about a **fragmented public sphere*** not unfounded *(Van der Meer, 2020)*
+      
++ parties often target people already **interested in politics**
+
+  + i.e. concerns about **"political redlining"** not unfounded *(Howard, 2005)*
+      
+---
+
+## Conclusions
+
++ The **Ad Targeting Dataset** released by Meta is a **step in the right direction** for ad transparency
+
+  + **however**, increases **dependency on Meta, should be seen critical**
+
+  + dataset is **not easily accessible** for researchers, and not at all by civil society
+  
+
++ Stepping stone for **future research**
+  
+  + Content! Targeting *and* tailoring
+
+---
+
+class: middle, center
+
+# Thank you for listening
+
+
+
+
+<div style="text-align: center;">
+    <div style="display: inline-block; text-align: left;">
+<p align="left">`r icons::icon_style(icons::fontawesome("link"),fill="lightgrey")`&nbsp;favstats.github.io/ddc2023 (Slides) <br> `r icons::icon_style(icons::fontawesome("twitter"),fill="blue")`&nbsp;favstats <br> `r icons::icon_style(icons::fontawesome("mastodon"),fill="#615ff7")`&nbsp;favstats@fosstodon.org <br> `r icons::icon_style(icons::fontawesome("square", style = "solid"),fill="#0085ff")`&nbsp;favstats.bsky.social</p>
+    </div>
+</div>
+
+
+
+
+---
+
+class: middle, center
+
+## APPENDIX
+
+
+
+---
+
+
+
+class: white
+
+#### RQ2: Country Differences
+
+
++ Political factors
+
++ Regulatory factors
+
++ Resource and Reach factors
 
 ---
 
@@ -864,15 +1072,15 @@ class: white
 
   + The more users on the platform as a share of population there is more spending on (micro-)targeting
 
+
 ---
+
 
 class: middle, center
 
 # Results
 
 ## RQ3: Party Differences
-
-
 
 ---
 
@@ -881,7 +1089,7 @@ class: white
 
 #### Which parties use microtargeting?
 
-> No ideological difference between microtargeting focus
+> Adoption of microtargeting does not differ between political ideology
 
 ![](img/ideo1.png)
 ---
@@ -891,7 +1099,7 @@ class: white
 
 #### Which parties use microtargeting?
 
-> No ideological difference between microtargeting focus
+> Adoption of microtargeting does not differ between political ideology
 
 ![](img/ideo2.png)
 
@@ -918,151 +1126,7 @@ class: white
 
 ![](img/age2.png)
 
-
 ---
-
-class: white
-
-#### How do they use microtargeting? - Right-leaning parties
-
-
-![](img/targettype_right.png)
-
----
-
-class: white
-
-#### How do they use microtargeting? - Right-leaning parties
-
-
-![](img/detailed_right.png)
-
-
----
-
-
-class: white
-
-#### How do they use microtargeting? - Left-leaning parties
-
-
-![](img/targettype_left.png)
-
----
-
-class: white
-
-#### How do they use microtargeting? - Left-leaning parties
-
-
-<img src="img/detailed_left.png" width="83%">
-
-
----
-
-class: white
-
-#### "Interest in politics" most commonly targeted
-
-<img src="img/topinterests.png" width="78%">
-
-
----
-
-
-#### RQ3: Party Differences
-
-
-+ **Which parties use microtargeting?**
-
-  + No ideological difference between microtargeting focus
-
-  + Older parties seem more likely use microtargeting strategies
-
-+ **How do they use microtargeting?**
-
-  + Parties seem to use microtargeting primarily to reach core audiences
-
-  + Parties seem to ue microtargeting primarily to reach politically involved audiences
-
-
-
-
----
-
-
-## Conclusions
-
-+ Online political **targeting** is **common around the world**
-
-**However:**
-
-  + Most commonly using a single targeting criterion
-    
-  + Most commonly using location and socio-demographics (e.g. age)
-
-+ political microtargeting is used **by both left and right**
-
---
-
-**So is political microtargeting overhyped?**
-
---
-
-+ Its usage in less-democratic countries should make us pause 
-
-+ parties **target** their respective **core audiences**
-
-  + i.e. concerns about a **fragmented public sphere*** not unfounded *(Van der Meer, 2020)*
-      
-+ parties often target people already **interested in politics**
-
-  + i.e. concerns about **"political redlining"** not unfounded *(Howard, 2005)*
-      
----
-
-## Conclusions
-
-+ The **Ad Targeting Dataset** released by Meta is a **step in the right direction** for ad transparency
-
-  + **however**, increases **dependency on Meta, should be seen critical**
-
-  + dataset is **not easily accessible** for researchers, and not at all by civil society
-  
-
-+ Stepping stone for **future research**
-  
-  + Content!
-
----
-
-class: middle, center
-
-# Thank you for listening
-
-
-
-
-<div style="text-align: center;">
-    <div style="display: inline-block; text-align: left;">
-<p align="left">`r icons::icon_style(icons::fontawesome("link"),fill="lightgrey")`&nbsp;favstats.github.io/ddc2023 (Slides) <br> `r icons::icon_style(icons::fontawesome("twitter"),fill="blue")`&nbsp;favstats <br> `r icons::icon_style(icons::fontawesome("mastodon"),fill="#615ff7")`&nbsp;favstats@fosstodon.org <br> `r icons::icon_style(icons::fontawesome("square", style = "solid"),fill="#0085ff")`&nbsp;favstats.bsky.social</p>
-    </div>
-</div>
-
-
-
-
----
-
-class: middle, center
-
-## APPENDIX
-
-
-
----
-
-
 
 class: white
 
@@ -1248,9 +1312,6 @@ class: middle, center
     + Difficult to get access
     
 ---
-
-
-
 
 ### Previous studies suggest advertisers on Meta primarily target own supporters
 
