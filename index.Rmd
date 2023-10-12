@@ -1,5 +1,5 @@
 ---
-title: "Who Doesn't Target You?"
+title: "Who Does(n't) Target You?"
 subtitle: "Mapping the Worldwide Usage of Online Political Microtargeting"
 author: "<b>Fabio Votta</b>, Simon Kruschinski <i>(University of Mainz)</i>, Mads Hove, Tom Dobber, Natali Helberger, and Claes de Vreese <i>(University of Amsterdam)</i>"
 date: '&nbsp;`r icons::icon_style(icons::fontawesome("link"),fill="black")`&nbsp;favstats.github.io/ddc2023 (Slides) <br> &nbsp;`r icons::icon_style(icons::fontawesome("twitter"),fill="blue")`&nbsp;favstats <br> &nbsp;`r icons::icon_style(icons::fontawesome("mastodon"),fill="#615ff7")`&nbsp;favstats@fosstodon.org <br> &nbsp;`r icons::icon_style(icons::fontawesome("square", style = "solid"),fill="#0085ff")`&nbsp;favstats.bsky.social &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 13th October 2023 - DDC Manchester Workshop'
@@ -20,8 +20,6 @@ layout: true
     
 <div class="logo"></div> 
 
----
-
 ```{r setup, include=FALSE}
 # Here you can place global options for the entire document.
 # Mostly used for knitr settings, but can also load data etc.
@@ -37,71 +35,339 @@ library(tidyverse)
 
 ```
 
-class: middle, center, white
-
-![](https://64.media.tumblr.com/fc5db9aeb892e90590a42940519279ee/tumblr_oqfhqlwFOb1rpu8e5o1_1280.png)
 
 ---
 
-### Studying **usage** of *online political microtargeting* 
+class: white, middle, center
 
-+ Ad Libraries
+### Is Political Microtargeting Destroying Democracy?
+ 
+ 
+<img src="img/cambridge_analytica.png" width="80%">
+
+
+
+---
+
+class: white, middle, center
+
+### How does (online) political microtargeting 
+### manifest in practice?
+
+
+![](img/diss.png)
+
+
+---
+
+
+class: white, middle, center
+
+## **Two** Gaps in the Literature
+
+
+#### 1. Inadequate or no data (on actual targeting strategies)
+
+Where do we get the data from?
+
+<br>
+
+#### 2. Focus on the Global North
+
+Which countries do we study? 
+
+---
+
+
+class: middle, center
+
+### 1. Inadequate or hard-to-access data
+
+#### Where do we get the data from?
+
+
+---
+
+class: white
+
+### Three sources of data
+
+#### 1. Ad Libraries
+
+#### 2. Browser extensions
+
+#### 3. Interviews
+
+---
+
+class: white
+
+
+### Ad Libraries
+
+.pull-left[
+
+
++ Ad Libraries *(e.g. Fowler et al., 2021;  Kruschinski et al., 2022)*
+
+  + Meta Ad Library, Google Ad Transparency Report, etc.
+
+  + some improvements to before
+  
+]
+
+.pull-right[
+
+![](img/adlib.png)
+
+]
+
+
+
+
+---
+
+
+
+class: white
+
+### Ad Libraries
+
+.pull-left[
+
+
++ Ad Libraries *(e.g. Fowler et al., 2021;  Kruschinski et al., 2022)*
+
+  + Meta Ad Library, Google Ad Transparency Report, etc.
 
   + some improvement to before
-
-  + inadequate (Edelson et al., 2020; Leerssen et al., 2019)
   
-  + In the EU they at least provide targeting based on age, gender, location (thank you DSA)
-
-+ Browser extensions
-
-  + Rely on the "Why am I seeing this ad" label (López Ortega, 2022; Silva et al., 2020)
+  *however*
   
-  + do not always correspond to the targeting criteria used by advertisers (Andreou et al., 2018)
+  + inaccurate and lack targeting criteria 
+  
+      + *(Edelson et al., 2020; Leerssen et al., 2019)*
+  
+  + In the EU now provide additional info 
+  
+      + on Meta: targeting based on age, gender, location (*thank you DSA*)
+  
+]
 
-+ Interviews
+.pull-right[
 
-  + in-depth first-hand knowledge
+![](img/adlib.png)
+
+]
+
+
+---
+
+class: white
+
+
+### Browser extensions
+
+
+.pull-left[
+
++ Browser extensions *(López Ortega, 2022; Silva et al., 2020)*
+
+  + Rely on the "Why am I seeing this ad" label 
+
+  + ProPublica, Who Targets Me, NYU Ad Observer, etc.
+
+  + Platform-independent way to retrieve data
+
+]
+
+.pull-right[
+
+![](img/browsers.png)
+
+]
+
+
+---
+
+class: white
+
+### Browser extensions
+
+.pull-left[
+
+
++ Browser extensions *(López Ortega, 2022; Silva et al., 2020)*
+
+  + Rely on the "Why am I seeing this ad" label 
+
+  + ProPublica, Who Targets Me, NYU Ad Observer, etc.
+  
+  + Platform-independent way to retrieve data
+  
+  *however*
+  
+  + Risk of getting banned by platforms (NYU case 2021)
+  
+  + do not always correspond to the targeting criteria used by advertisers *(Andreou et al., 2018)*
+  
+  + who is more likely to sign-up for these browser applications?
+  
+  + only Desktop browsers
+
+]
+
+
+.pull-right[
+
+![](img/browsers.png)
+
+]
+
+---
+
+class: white
+
+### Interviews
+
+.pull-left[
+
+
++ Interviews *(López Ortega, 2022; Silva et al., 2020)*
+
+  + campaign staff or platform employees
+  
+  + in-depth first-hand knowledge and qualitative data
+  
+]
+
+  
+.pull-right[
+
+![](https://media.istockphoto.com/id/1350903564/vector/hand-holding-the-microphone-flat-design-vector-illustration-live-news-journalist-interview.jpg?s=612x612&w=0&k=20&c=-PMSMRE0hsxiaLkn7QLyas3rEFeSouVe6A7AB3_4MPM=)
+
+]
+
+
+---
+
+class: white
+
+### Interviews
+
+.pull-left[
+
+
++ Interviews *(López Ortega, 2022; Silva et al., 2020)*
+
+  + campaign staff or platform employees
+  
+  + in-depth first-hand knowledge and qualitative data
+  
+  *however*
   
   + campaigns might not be willing to share information on how they utilize voter data for targeted ads
   
+  + who gets to have access to political parties?
   
--> current data mostly **I N A D E Q UA T E** for studying the phenomena
+]
+
+
+  
+.pull-right[
+
+![](https://media.istockphoto.com/id/1350903564/vector/hand-holding-the-microphone-flat-design-vector-illustration-live-news-journalist-interview.jpg?s=612x612&w=0&k=20&c=-PMSMRE0hsxiaLkn7QLyas3rEFeSouVe6A7AB3_4MPM=)
+
+]
+
 
 ---
+
+class: middle, center
+
+
+#### current data 
+#### **I N A D E Q U A T E** 
+#### for studying the phenomena (or hard to access)
+
+---
+
+class: middle, center
+
+### 2. Focus on the Global North
+
+#### Which countries do we study? 
+
+---
+
+class: white
 
 ### Research on political microtargeting - a WEIRD problem?
 
-+ Ad Libraries
+```{r, echo=F, fig.width=6, fig.height=4, dpi=900, eval = F}
+the_dat <- readr::read_csv2("data/world.csv") %>% 
+  janitor::clean_names() %>% 
+  filter(str_detect(type_of_study, "Empirical")) %>% 
+  pull(countries) %>% 
+  str_split(",") %>% 
+  unlist() %>% 
+  str_remove_all("and ") %>%  
+  str_remove_all("the United Kingdom |\\(|\\)") %>% 
+  str_squish() %>% str_trim() %>% 
+  tibble(me = .) %>% 
+  count(me, sort = T) %>% 
+  filter(me != "xx") %>% 
+  mutate(cntry = countrycode::countrycode(me, "country.name", "iso2c")) 
 
-+ Browser extensions
+library(rnaturalearth)
 
-+ Interviews
+world <- ne_countries(scale = "small", returnclass = "sf")
+
+# region_bbound <- geojsonsf::geojson_sf("https://services6.arcgis.com/uWtJiVzcBsV6C7NV/arcgis/rest/services/M49_regions_final/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson")
+
+ggworld <- world %>% 
+  filter(!(name_en %in% c("Antarctica", "Greenland"))) %>% 
+  # count(region, sort = T) 
+  mutate(cntry = countrycode::countrycode(name_en, "country.name", "iso2c")) %>% 
+  left_join(the_dat) 
+
+# saveRDS(ggworld, file = "overleaf/n_targeting_per_cntry.rds")
+
+the_world <- ggworld %>% 
+  mutate(n = as.character(n)) %>% 
+  mutate(n = fct_reorder(n, as.numeric(n))) %>% 
+  ggplot() + 
+  geom_sf(aes(fill = n), color = "white") +
+  theme_void() +
+  theme(legend.position = "top") +
+  labs(fill = "Number of Studies:")  +
+  colorspace::scale_fill_discrete_sequential(palette = "Viridis", na.value = "lightgrey", 
+                        # breaks = my_breaks, labels = my_breaks2, 
+                        # breaks = c(0,1,2,3,seq(4,20,4)),
+                        # breaks = seq(0,20,1),
+                        # breaks = c(0,2,4,6,8),
+                        # breaks = c(0,1,2,3),
+                        guide="legend") + guides(fill = guide_legend(nrow = 1))
+  # geom_sf(data = region_bbound, color = "white", fill =NA, size = 10) +
+  # ggthemes::scale_fill_colorblind(na.value = "lightgrey") + # or direction=1
+  # scale_fill_manual(values = c("lightgrey", "blue")) + 
+  # guides(fill=guide_colourbar(nrow=1, byrow=TRUE, barwidth = 10.5, barheight = 0.4, title.vjust=1.2))
+  # coord_sf()
+# the_world
+ggsave("img/worldmapss.png", dpi = 900, bg = "white", width = 8, height = 4)
+```
+![](img/worldmapss.png)
 
 ---
 
-### Studying **usage** of *online political microtargeting* 
+class: white, middle, center
 
-+ Poor data access (Leerssen et al. 2021)
-
---
-
-+ Risk of getting banned by platforms (NYU case 2021)
-  
-<center>
-  
-<img src="img/myth.jpg" width="40%" height="40%">
-
-</center>
+# Recent Developments
 
 ---
 
-### Studying **usage** of *online political microtargeting* 
+### Data on Ad Targeting
 
-+ Poor data access (Leerssen et al. 2021)
-
-+ Risk of getting banned by platforms (NYU case 2021)
-  
 **Meta Ad Targeting Dataset**
 
 + September 2022 Meta gave *vetted researchers* access to an "ad targeting dataset"
@@ -130,7 +396,7 @@ class: middle, center, white
 
 class: middle, center
 
-### For the first time we can investigate the usage of online political microtargeting at scale and worldwide using a very comprehensive (but probably not 100% complete) data source
+### For the first time we can investigate the usage of online political microtargeting at scale and worldwide
 
 ---
 
@@ -139,9 +405,10 @@ class: middle, center
 
 ## Aims of this Research
 
-**Descriptive Data Analysis of Political Microtargeting**
+**Descriptive analysis of political microtargeting**
 
-**Worldwide Context (not just US, UK and Europe)**
+
+**Laying the foundation for future microtargeting research**
 
 ---
 
@@ -149,17 +416,21 @@ class: middle, center
 
 + RQ1: Assessing the Scale
 
-  + **How prevalent** is the use of political microtargeting across the globe **and which targeting and exclusion strategies** do political campaigns employ?
+  + **How prevalent is the use of political microtargeting** across the globe **and which targeting and exclusion strategies** do political campaigns employ?
+  
+--
 
 <!-- How much money do political parties spend on targeted ads vs. ads that are targeted towards entire country?  -->
 
 <!-- Split up by country, party type and family/ideology. -->
 
-+ RQ2: Which countries?
++ RQ2: Country differences
 
   + How do different strategies of targeting and exclusion manifest across **countries**?
 
-+ RQ3: Which parties?
+--
+
++ RQ3: Party differences
 
   + How do different strategies of targeting and exclusion manifest across **parties**?
 
@@ -170,21 +441,9 @@ class: middle, center
 
 ---
 
-## Four Targeting and Exclusion Strategies
-
-![](img/fourcats.png)
-
----
-
-## Method
-
-![](img/method.png)
-
----
-
 class: white
 
-## Sample Description
+## Target Sample
 
 .leftcol30[
 
@@ -196,6 +455,10 @@ class: white
 + We identified: 
   + *132 countries* 
   + *156 elections*
+  
+
++ Only focus on **political parties and candidates**
+
 ]
 
 <!-- **122 *national* elections** in **101 countries** between -->
@@ -209,22 +472,54 @@ class: white
 
 class: white
 
+## Method
+
+.leftcol[
+
++ data annotated & enhanced using the *Party Facts database* (Döring & Regel 2019)
+
+  + mainly based on Wikipedia
+  
+  + we hand-coded over 9k advertisers and 900 parties (100 top advertisers + 50 random sample per election)
+  
++ Multi-source matching 
+
+   + based on dictionary
+   + open databases like Wikipedia, Google data, also Who Targets Me
+
++ self-tagging of political advertisers
+
+  + *Political party, candidate, politician, government official*
+  
+
+]
+
+
+.rightcol[
+
+<img src="img/pf.png" width="100%">
+]
+
+
+---
+
+class: white
+
 ## Sample Description
 
 .leftcol30[
 
-+ All **national** elections between *August 2020 and December 2022*
++ All **national-level** elections between *August 2020 and December 2022*
 
 + Time-frame: 3 months before election day
 
 
-+ Final target sample: 
++ Final sample: 
   + **95 countries** 
   + **113 elections** 
   + 10 countries had no data (e.g. Russia, Iran)
   + 27 countries no political advertisers (e.g. Venezuela, Niger)
 
-+ Only focus on **political parties and candidates**
 ]
 
 <!-- **122 *national* elections** in **101 countries** between -->
@@ -244,41 +539,33 @@ class: white
 
 <br>
 
-+ Median spent per country: 40k-207k US Dollar
++ Median spent per country: **40k-207k** US Dollar
 
-+ Total spent: 418m-643m US Dollar
++ Total spent: **418m-643m** US Dollar
+
 
 ---
 
 class: white
 
-## Sample TODAY
+## Four Targeting and Exclusion Strategies
 
-.leftcol30[
+<center>
 
+<img src="img/fourcats.png" width="85%">
 
-First results based on: 
-  
-+ **27 countries** 
-
-+ **30 elections** 
-
-+ **309** hand-coded **political parties**
-  + looking at 100 top advertisers in each country which on average covers 91.36% of ad spend
-
-+ placing **871k ads** 
-
-+ combined (minimum) ad spend: **$241 Million**
-
-(data annotated & enhanced using the the *Partyfacts database*, see Döring & Regel 2019)
-
-]
+</center>
 
 
-.rightcol70[
-![](img/worldmap_coverage3.png)
+---
 
-]
+
+class: middle, center
+
+# Results
+
+## RQ1: Global Prevalence and Usage
+
 
 
 ---
@@ -310,6 +597,20 @@ class: white
 
 ---
 
+class: white
+
+#### RQ1: Global Prevalence and Usage
+
+> *Targeting common across geographical regions*
+
+<center>
+
+<img src="img/regionpay.png" width="80%">
+
+</center>
+
+---
+
 
 class: white
 
@@ -337,25 +638,12 @@ class: white
 
 <center>
 
-
 <img src="img/targ3.png" width="100%">
 
 </center>
 
 
 ---
-
-class: white
-
-#### RQ1: Global Prevalence and Usage
-
-> *Targeting common across geographical regions*
-
-![](img/regionpay.png)
-
-
----
-
 
 class: white
 
@@ -390,6 +678,17 @@ class: white
 
 ---
 
+class: middle, center
+
+# Results
+
+## RQ2: Country Differences
+
+
+
+---
+
+
 class: white
 
 #### RQ2: Country Differences
@@ -407,7 +706,7 @@ class: white
 
 #### Political factors
   
-  > Targeting strategies are common regardless of level of democracy
+> Targeting strategies are common regardless of level of democracy
 
 
 ![](img/democ1.png)
@@ -454,7 +753,7 @@ class: white
 
 > Countries with stricter data protection laws exhibit more spending on microtargeting
   
-![](img/limits.png)
+![](img/protecc.png)
 
 ---
 
@@ -530,6 +829,16 @@ class: white
   + GDP per capita correlates more positively with spending on (micro-)targeting
 
   + The more users on the platform as a share of population there is more spending on (micro-)targeting
+
+---
+
+class: middle, center
+
+# Results
+
+## RQ3: Party Differences
+
+
 
 ---
 
@@ -644,7 +953,78 @@ class: white
 
 
 
+
 ---
+
+
+## Conclusions
+
++ Online political **targeting** is **common around the world**
+
+**However:**
+
+  + Most commonly using a single targeting criterion
+    
+  + Most commonly using location and socio-demographics (e.g. age)
+
++ political microtargeting is used **by both left and right**
+
+--
+
+**So is political microtargeting overhyped?**
+
+--
+
++ Its usage in less-democratic countries should make us pause 
+
+  + they **target** their respective **core audiences**
+  
+      + i.e. concerns about a **defragmented public sphere*** not unfounded
+      
+  + they often target people already **interested in politics**
+  
+      + i.e. concerns about **"political redlining"**    not unfounded
+      
+---
+
+## Conclusions
+
++ The **Ad Targeting Dataset** released by Meta is a **step in the right direction** for ad transparency
+
+  + **however**, increases **dependency on Meta, should be seen critical**
+
+  + dataset is **not easily accessible** for researchers, and not at all by civil society
+  
+
+---
+
+class: middle, center
+
+# Thank you for listening
+
+
+
+
+<div style="text-align: center;">
+    <div style="display: inline-block; text-align: left;">
+<p align="left">`r icons::icon_style(icons::fontawesome("link"),fill="lightgrey")`&nbsp;favstats.github.io/ddc2023 (Slides) <br> `r icons::icon_style(icons::fontawesome("twitter"),fill="blue")`&nbsp;@favstats <br> `r icons::icon_style(icons::fontawesome("mastodon"),fill="#615ff7")`&nbsp;@favstats@fosstodon.org <br> `r icons::icon_style(icons::fontawesome("square", style = "solid"),fill="#0085ff")`&nbsp;favstats.bsky.social</p>
+    </div>
+</div>
+
+
+
+
+---
+
+class: middle, center
+
+## APPENDIX
+
+
+
+---
+
+
 
 class: white
 
@@ -700,72 +1080,20 @@ class: white
 
 ---
 
+### Data on Ad Targeting I
 
-## Conclusions
 
-+ Online political **targeting** is **common around the world**
++ September 2022: Meta adds "Audience" tab to public Meta Ad Library  
 
-**However:**
-
-  + Most commonly using a single targeting criterion
+    + Coverage: All countries in which political ads run
     
-  + Most commonly using location and socio-demographics (e.g. age)
-
---
-
-**So is political microtargeting overhyped?**
-
---
-
-+ Its usage in less-democratic countries or less stable societies should make us pause 
-
-
-+ political microtargeting is used **by both left and right**
-
-  + they **target** their respective **core audiences**
-  
-      + i.e. concerns about a **defragmented public sphere*** not unfounded
-      
-  + they often target people already **interested in politics**
-  
-      + i.e. concerns about **"political redlining"**    not unfounded
-      
----
-
-## Conclusions
-
-+ The **Ad Targeting Dataset** released by Meta is a **step in the right direction** for ad transparency
-
-  + **however**, increases **dependency on Meta, should be seen critical**, especially given  announcement of recent Twitter API changes
-
-  + dataset is **not easily accessible** for researchers, and not at all by civil society
-  
-
----
-
-class: middle, center
-
-# Thank you for listening
-
-
-
-
-<div style="text-align: center;">
-    <div style="display: inline-block; text-align: left;">
-<p align="left">`r icons::icon_style(icons::fontawesome("link"),fill="lightgrey")`&nbsp;favstats.github.io/targex (Slides) <br> `r icons::icon_style(icons::fontawesome("twitter"),fill="blue")`&nbsp;@favstats <br> `r icons::icon_style(icons::fontawesome("mastodon"),fill="#615ff7")`&nbsp;@favstats@fosstodon.org</p>
-    </div>
-</div>
-
-
-
-
----
-
-class: middle, center
-
-## APPENDIX
-
-
+    + Targeting criteria: Age, Gender, Location, Language, "Interests" and "Behaviour", Custom and Lookalike Audiences 
+    
+    + Downside: only available for last 7, 30, and 90 days windows
+    
+    + No possibility to download data (however: I've written an R package `metargetr` to retrieve the data)
+        
+![](img/targeting2.png)
 
 ---
 
@@ -884,22 +1212,7 @@ class: middle, center
 ---
 
 
-### Data on Ad Targeting
 
-
-+ September 2022: Meta adds "Audience" tab to public Meta Ad Library  
-
-    + Coverage: All countries in which political ads run
-    
-    + Targeting criteria: Age, Gender, Location, Language, "Interests" and "Behaviour", Custom and Lookalike Audiences 
-    
-    + Downside: only available for last 7, 30, and 90 days windows
-    
-    + No possibility to download data (however: I've written an R package to be released to access data)
-        
-![](img/targeting2.png)
-
----
 
 ### Previous studies suggest advertisers on Meta primarily target own supporters
 
