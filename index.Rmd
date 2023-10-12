@@ -302,7 +302,7 @@ class: middle, center
 
 class: white
 
-### Research on political microtargeting - a WEIRD problem?
+### Political microtargeting - a WEIRD issue? .font50[(Aagaard & Marthedal 2023 + own research)]
 
 ```{r, echo=F, fig.width=6, fig.height=4, dpi=900, eval = F}
 the_dat <- readr::read_csv2("data/world.csv") %>% 
@@ -312,12 +312,12 @@ the_dat <- readr::read_csv2("data/world.csv") %>%
   str_split(",") %>% 
   unlist() %>% 
   str_remove_all("and ") %>%  
-  str_remove_all("the United Kingdom |\\(|\\)") %>% 
+  # str_remove_all("the United Kingdom |\\(|\\)") %>% 
   str_squish() %>% str_trim() %>% 
   tibble(me = .) %>% 
-  count(me, sort = T) %>% 
   filter(me != "xx") %>% 
-  mutate(cntry = countrycode::countrycode(me, "country.name", "iso2c")) 
+  mutate(cntry = countrycode::countrycode(me, "country.name", "iso2c")) %>% 
+  count(cntry, sort = T) 
 
 library(rnaturalearth)
 
@@ -353,7 +353,7 @@ the_world <- ggworld %>%
   # scale_fill_manual(values = c("lightgrey", "blue")) + 
   # guides(fill=guide_colourbar(nrow=1, byrow=TRUE, barwidth = 10.5, barheight = 0.4, title.vjust=1.2))
   # coord_sf()
-# the_world
+the_world
 ggsave("img/worldmapss.png", dpi = 900, bg = "white", width = 8, height = 4)
 ```
 ![](img/worldmapss.png)
@@ -472,15 +472,17 @@ class: white
 
 class: white
 
-## Method
+## Methods
 
 .leftcol[
 
-+ data annotated & enhanced using the *Party Facts database* (Döring & Regel 2019)
++ data annotated & enhanced using the *Party Facts database* *(Döring & Regel 2019)*
 
   + mainly based on Wikipedia
   
-  + we hand-coded over 9k advertisers and 900 parties (100 top advertisers + 50 random sample per election)
+  + we hand-coded over 9k advertisers and 900+ parties
+  
+  + 100 top advertisers + 50 random sample per election
   
 + Multi-source matching 
 
@@ -555,6 +557,38 @@ class: white
 <img src="img/fourcats.png" width="85%">
 
 </center>
+
+
+---
+
+
+
+
+class: white
+
+## Targeting and Exclusion Combinations
+
+
+.leftcol[
+
+We count targeting and exclusion combinations each time an additional criterion **reduces the audience size**
+
+0 criterias = all ages, all genders, entire country
+
+1 criterion = one interest audience
+
+2 criterias = one interest audiences in specific cities
+
+3 or more = 18-25 year olds, one interested audience in specific cities
+
+]
+
+.rightcol[
+
+<img src="img/fourcats.png" width="100%">
+
+]
+
 
 
 ---
@@ -977,13 +1011,13 @@ class: white
 
 + Its usage in less-democratic countries should make us pause 
 
-  + they **target** their respective **core audiences**
-  
-      + i.e. concerns about a **defragmented public sphere*** not unfounded
++ parties **target** their respective **core audiences**
+
+  + i.e. concerns about a **fragmented public sphere*** not unfounded *(Van der Meer, 2020)*
       
-  + they often target people already **interested in politics**
-  
-      + i.e. concerns about **"political redlining"**    not unfounded
++ parties often target people already **interested in politics**
+
+  + i.e. concerns about **"political redlining"** not unfounded *(Howard, 2005)*
       
 ---
 
@@ -996,6 +1030,10 @@ class: white
   + dataset is **not easily accessible** for researchers, and not at all by civil society
   
 
++ Stepping stone for **future research**
+  
+  + Content!
+
 ---
 
 class: middle, center
@@ -1007,7 +1045,7 @@ class: middle, center
 
 <div style="text-align: center;">
     <div style="display: inline-block; text-align: left;">
-<p align="left">`r icons::icon_style(icons::fontawesome("link"),fill="lightgrey")`&nbsp;favstats.github.io/ddc2023 (Slides) <br> `r icons::icon_style(icons::fontawesome("twitter"),fill="blue")`&nbsp;@favstats <br> `r icons::icon_style(icons::fontawesome("mastodon"),fill="#615ff7")`&nbsp;@favstats@fosstodon.org <br> `r icons::icon_style(icons::fontawesome("square", style = "solid"),fill="#0085ff")`&nbsp;favstats.bsky.social</p>
+<p align="left">`r icons::icon_style(icons::fontawesome("link"),fill="lightgrey")`&nbsp;favstats.github.io/ddc2023 (Slides) <br> `r icons::icon_style(icons::fontawesome("twitter"),fill="blue")`&nbsp;favstats <br> `r icons::icon_style(icons::fontawesome("mastodon"),fill="#615ff7")`&nbsp;favstats@fosstodon.org <br> `r icons::icon_style(icons::fontawesome("square", style = "solid"),fill="#0085ff")`&nbsp;favstats.bsky.social</p>
     </div>
 </div>
 

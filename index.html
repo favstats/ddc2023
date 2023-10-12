@@ -57,9 +57,6 @@ class: white, middle, center
 ![](img/diss.png)
 
 
-
-
-
 ---
 
 
@@ -68,7 +65,7 @@ class: white, middle, center
 ## **Two** Gaps in the Literature
 
 
-#### 1. Inadequate or hard-to-access data (on actual targeting strategies)
+#### 1. Inadequate or no data (on actual targeting strategies)
 
 Where do we get the data from?
 
@@ -76,7 +73,7 @@ Where do we get the data from?
 
 #### 2. Focus on the Global North
 
-Which countries do we study? *Can* we study?
+Which countries do we study? 
 
 ---
 
@@ -165,6 +162,8 @@ class: white
 
 ---
 
+class: white
+
 
 ### Browser extensions
 
@@ -189,6 +188,8 @@ class: white
 
 
 ---
+
+class: white
 
 ### Browser extensions
 
@@ -284,7 +285,9 @@ class: white
 class: middle, center
 
 
-#### &amp;rarr; current data **I N A D E Q U A T E** for studying the phenomena (or hard to access)
+#### current data 
+#### **I N A D E Q U A T E** 
+#### for studying the phenomena (or hard to access)
 
 ---
 
@@ -292,13 +295,13 @@ class: middle, center
 
 ### 2. Focus on the Global North
 
-#### Which countries do we study? *Can* we study?
+#### Which countries do we study? 
 
 ---
 
 class: white
 
-### Research on political microtargeting - a WEIRD problem?
+### Political microtargeting - a WEIRD issue? .font50[(Aagaard &amp; Marthedal 2023 + own research)]
 
 
 ![](img/worldmapss.png)
@@ -312,23 +315,6 @@ class: white, middle, center
 ---
 
 ### Data on Ad Targeting
-
-
-+ September 2022: Meta adds "Audience" tab to public Meta Ad Library  
-
-    + Coverage: All countries in which political ads run
-    
-    + Targeting criteria: Age, Gender, Location, Language, "Interests" and "Behaviour", Custom and Lookalike Audiences 
-    
-    + Downside: only available for last 7, 30, and 90 days windows
-    
-    + No possibility to download data (however: I've written an R package `metargetr` to retrieve the data)
-        
-![](img/targeting2.png)
-
----
-
-### Studying **usage** of *online political microtargeting* 
 
 **Meta Ad Targeting Dataset**
 
@@ -358,7 +344,7 @@ class: white, middle, center
 
 class: middle, center
 
-### For the first time we can investigate the usage of online political microtargeting at scale and worldwide using a very comprehensive (but probably not 100% complete) data source
+### For the first time we can investigate the usage of online political microtargeting at scale and worldwide
 
 ---
 
@@ -368,6 +354,7 @@ class: middle, center
 ## Aims of this Research
 
 **Descriptive analysis of political microtargeting**
+
 
 **Laying the foundation for future microtargeting research**
 
@@ -416,6 +403,10 @@ class: white
 + We identified: 
   + *132 countries* 
   + *156 elections*
+  
+
++ Only focus on **political parties and candidates**
+
 ]
 
 &lt;!-- **122 *national* elections** in **101 countries** between --&gt;
@@ -429,15 +420,17 @@ class: white
 
 class: white
 
-## Method
+## Methods
 
 .leftcol[
 
-+ data annotated &amp; enhanced using the *Party Facts database* (Döring &amp; Regel 2019)
++ data annotated &amp; enhanced using the *Party Facts database* *(Döring &amp; Regel 2019)*
 
   + mainly based on Wikipedia
   
-  + we hand-coded over 9k advertisers and 900 parties (100 top advertisers + 50 random sample)
+  + we hand-coded over 9k advertisers and 900+ parties
+  
+  + 100 top advertisers + 50 random sample per election
   
 + Multi-source matching 
 
@@ -477,7 +470,6 @@ class: white
   + 10 countries had no data (e.g. Russia, Iran)
   + 27 countries no political advertisers (e.g. Venezuela, Niger)
 
-+ Only focus on **political parties and candidates**
 ]
 
 &lt;!-- **122 *national* elections** in **101 countries** between --&gt;
@@ -513,6 +505,38 @@ class: white
 &lt;img src="img/fourcats.png" width="85%"&gt;
 
 &lt;/center&gt;
+
+
+---
+
+
+
+
+class: white
+
+## Targeting and Exclusion Combinations
+
+
+.leftcol[
+
+We count targeting and exclusion combinations each time an additional criterion **reduces the audience size**
+
+0 criterias = all ages, all genders, entire country
+
+1 criterion = one interest audience
+
+2 criterias = one interest audiences in specific cities
+
+3 or more = 18-25 year olds, one interested audience in specific cities
+
+]
+
+.rightcol[
+
+&lt;img src="img/fourcats.png" width="100%"&gt;
+
+]
+
 
 
 ---
@@ -555,6 +579,20 @@ class: white
 
 ---
 
+class: white
+
+#### RQ1: Global Prevalence and Usage
+
+&gt; *Targeting common across geographical regions*
+
+&lt;center&gt;
+
+&lt;img src="img/regionpay.png" width="80%"&gt;
+
+&lt;/center&gt;
+
+---
+
 
 class: white
 
@@ -588,21 +626,6 @@ class: white
 
 
 ---
-
-class: white
-
-#### RQ1: Global Prevalence and Usage
-
-&gt; *Targeting common across geographical regions*
-
-&lt;center&gt;
-
-&lt;img src="img/regionpay.png" width="80%"&gt;
-
-&lt;/center&gt;
-
----
-
 
 class: white
 
@@ -665,7 +688,7 @@ class: white
 
 #### Political factors
   
-  &gt; Targeting strategies are common regardless of level of democracy
+&gt; Targeting strategies are common regardless of level of democracy
 
 
 ![](img/democ1.png)
@@ -712,7 +735,7 @@ class: white
 
 &gt; Countries with stricter data protection laws exhibit more spending on microtargeting
   
-![](img/limits.png)
+![](img/protecc.png)
 
 ---
 
@@ -926,24 +949,23 @@ class: white
     
   + Most commonly using location and socio-demographics (e.g. age)
 
++ political microtargeting is used **by both left and right**
+
 --
 
 **So is political microtargeting overhyped?**
 
 --
 
-+ Its usage in less-democratic countries or less stable societies should make us pause 
++ Its usage in less-democratic countries should make us pause 
 
++ they **target** their respective **core audiences**
 
-+ political microtargeting is used **by both left and right**
-
-  + they **target** their respective **core audiences**
-  
-      + i.e. concerns about a **defragmented public sphere*** not unfounded
+  + i.e. concerns about a **defragmented public sphere*** not unfounded
       
-  + they often target people already **interested in politics**
-  
-      + i.e. concerns about **"political redlining"**    not unfounded
++ they often target people already **interested in politics**
+
+  + i.e. concerns about **"political redlining"** not unfounded
       
 ---
 
@@ -951,10 +973,14 @@ class: white
 
 + The **Ad Targeting Dataset** released by Meta is a **step in the right direction** for ad transparency
 
-  + **however**, increases **dependency on Meta, should be seen critical**, especially given  announcement of recent Twitter API changes
+  + **however**, increases **dependency on Meta, should be seen critical**
 
   + dataset is **not easily accessible** for researchers, and not at all by civil society
   
+
++ Stepping stone for **future research**
+  
+  + Content!
 
 ---
 
@@ -967,7 +993,7 @@ class: middle, center
 
 &lt;div style="text-align: center;"&gt;
     &lt;div style="display: inline-block; text-align: left;"&gt;
-&lt;p align="left"&gt;&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:lightgrey;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"&gt;&lt;/path&gt;&lt;/svg&gt;&amp;nbsp;favstats.github.io/targex (Slides) &lt;br&gt; &lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:blue;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"&gt;&lt;/path&gt;&lt;/svg&gt;&amp;nbsp;@favstats &lt;br&gt; &lt;svg viewBox="0 0 448 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:#615ff7;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"&gt;&lt;/path&gt;&lt;/svg&gt;&amp;nbsp;@favstats@fosstodon.org&lt;/p&gt;
+&lt;p align="left"&gt;&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:lightgrey;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"&gt;&lt;/path&gt;&lt;/svg&gt;&amp;nbsp;favstats.github.io/ddc2023 (Slides) &lt;br&gt; &lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:blue;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"&gt;&lt;/path&gt;&lt;/svg&gt;&amp;nbsp;favstats &lt;br&gt; &lt;svg viewBox="0 0 448 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:#615ff7;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"&gt;&lt;/path&gt;&lt;/svg&gt;&amp;nbsp;favstats@fosstodon.org &lt;br&gt; &lt;svg viewBox="0 0 448 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:#0085ff;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"&gt;&lt;/path&gt;&lt;/svg&gt;&amp;nbsp;favstats.bsky.social&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1037,6 +1063,23 @@ class: white
 #### RQ2: Who are political parties including and excluding on Meta? (party-level)
 
 ![](img/spend_per_age.png)
+
+---
+
+### Data on Ad Targeting I
+
+
++ September 2022: Meta adds "Audience" tab to public Meta Ad Library  
+
+    + Coverage: All countries in which political ads run
+    
+    + Targeting criteria: Age, Gender, Location, Language, "Interests" and "Behaviour", Custom and Lookalike Audiences 
+    
+    + Downside: only available for last 7, 30, and 90 days windows
+    
+    + No possibility to download data (however: I've written an R package `metargetr` to retrieve the data)
+        
+![](img/targeting2.png)
 
 ---
 
